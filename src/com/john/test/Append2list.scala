@@ -14,6 +14,7 @@ object Append2list {
    case x::xs1 => x::append(xs1,ys)
   }
 
+  /* *Head Tail Init and last examples */
   def InitLastHeadTail[T](xs:List[T])={
   println("Head"+xs.head)
   println("Tail"+xs.tail)
