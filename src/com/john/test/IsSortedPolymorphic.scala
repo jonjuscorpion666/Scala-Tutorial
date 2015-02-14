@@ -1,11 +1,8 @@
 package com.john.test
 
 object IsSortedPolymorphic {
-  
   def main(args:Array[String]): Unit= {
-    
-    println(isSorted(Array(1,4,5,24),(x: Int,y: Int ) => x<y))
-   
+    println(isSorted(Array(1,4,7,24),(x: Int,y: Int ) => x<y))
   }
 def isSorted[A](ss: Array[A], ordered: (A,A) => Boolean): Boolean = {
  def loop(n:Int):Boolean={
@@ -16,7 +13,5 @@ def isSorted[A](ss: Array[A], ordered: (A,A) => Boolean): Boolean = {
  }
 loop(0)
 }
-
-
 }
 
